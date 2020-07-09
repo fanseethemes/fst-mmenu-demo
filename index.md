@@ -20,8 +20,8 @@
 
 <body>
     <div class="container">
-        <h1>We used jQuery form CDN network</h1>
         
+        <h1>We used jQuery form CDN network</h1>
         <button class="fst-mmenu-toggler">menu toggler</button>
         <button>second</button>
 
@@ -55,8 +55,6 @@
                 </li>
             </ul>
         </div>
-
-       
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
