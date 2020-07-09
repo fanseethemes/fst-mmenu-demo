@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/fst-mmenu.css">
+    <title>Fst Mmenu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+        .container {
+            text-align: center;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>We used jQuery form CDN network</h1>
+        
+        <button class="fst-mmenu-toggler">menu toggler</button>
+        <button>second</button>
+
+        <div id="mobile-menu">
+            <ul>
+                <li><a href="">child one</a></li>
+                <li><a href="">child two</a>
+
+                    <ul hello="data">
+                        <li data="mishal"><a href="">second level</a></li>
+                        <li><a href="">second leve two</a></li>
+                        <li><a href="">second level three</a></li>
+                        <li><a href="">second level four</a>
+                            <ul hello="data">
+                                <li data="mishal"><a href="">second level</a></li>
+                                <li><a href="">second leve two</a></li>
+                                <li><a href="">second level three</a></li>
+                                <li><a href="">second level four</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                <li><a href="">child four</a></li>
+                <li><a href="">child five</a>
+                    <ul hello="data">
+                        <li data="mishal"><a href="">second level</a></li>
+                        <li><a href="">second leve two</a></li>
+                        <li><a href="">second level three</a></li>
+                        <li><a href="">second level four</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+       
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dist/fst-mmenu.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#mobile-menu').fstMmenu();
+        });
+    </script>
+</body>
+
+</html>
